@@ -8,7 +8,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 // import { useRouter } from 'next/router';
-import TempImg from '../public/assets/temp.png'
+import LogoDMR from '../public/assets/logoDMR.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -60,7 +60,7 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
             <Image
-              src={TempImg}
+              src={LogoDMR}
               alt='/'
               width='125'
               height='50'
@@ -70,19 +70,19 @@ const Navbar = () => {
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/'>Home</Link>
+              <Link href='/'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>HOME</span></Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#about'>About</Link>
+              <Link href='/#about'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>ABOUT</span></Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#skills'>Skills</Link>
+              <Link href='/#skills'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>SKILLS</span></Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#projects'>Projects</Link>
+              <Link href='/#projects'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>PROJECTS</span></Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#contact'>Contact</Link>
+              <Link href='/#contact'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>CONTACT</span></Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -115,7 +115,7 @@ const Navbar = () => {
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
                   <Image
-                    src={TempImg}
+                    src={LogoDMR}
                     width='87'
                     height='35'
                     alt='/'
@@ -130,7 +130,8 @@ const Navbar = () => {
             </div>
             <div className='border-b border-gray-300 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
-                Crafting web experiences with a touch of creativity
+                <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>Daniel M Reynaud</span>
+                
               </p>
             </div>
           </div>
@@ -138,33 +139,33 @@ const Navbar = () => {
             <ul className='uppercase'>
               <Link href='/'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Home
+                    <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>HOME</span>
                 </li>
               </Link>
               <Link href='/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  About
+                    <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>ABOUT</span>
                 </li>
               </Link>
               <Link href='/#skills'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Skills
+                    <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>SKILLS</span>
                 </li>
               </Link>
               <Link href='/#projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Projects
+                    <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>PROJECTS</span>
                 </li>
               </Link>
               <Link href='/#contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Contact
+                    <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>CONTACT</span>
                 </li>
               </Link>
             </ul>
             <div className='pt-40'>
-              <p className='uppercase tracking-widest text-[#5651e5]'>
-                Let&#39;s Connect
+              <p className='uppercase tracking-widest text-[#5651e5] JosefinSansFont font-semibold'>
+                Let&#39;s Talk
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
