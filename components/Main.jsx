@@ -14,7 +14,7 @@ const Main = () => {
             Crafting web experiences with a touch of creativity
           </p>
           <h1 className='py-4 text-gray-700'>
-            <span className='text-[#b03a83] JosefinSansFont font-semibold'>Daniel M. Reynaud</span>
+            <span className='text-[#b03a83] JosefinSansFont font-semibold'>Daniel Macías R.</span>
           </h1>
           <h2 className='py-2 text-gray-700 JosefinSansFont'>A Full-Stack Web Developer</h2>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
