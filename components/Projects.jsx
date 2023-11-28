@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import ProjectItem from './ProjectItem';
-import TempImg from '../public/assets/temp.png'
 import ThumbMultitool from '../public/assets/multitool/thumb-info.png'
 import ThumbLandmass from '../public/assets/landmass/thumb-landmass.png'
 import ThumbWords from '../public/assets/puzzle/thumb-words.png'
@@ -25,7 +23,7 @@ const Projects = () => {
         <div className='grid md:grid-cols-2 gap-8'>
           
           <div className="flex flex-col justify-center items-center sm:order-1 order-1">
-            <p className="text-xl text-gray-700 font-bold">Information Security Multitool</p>
+            <p className="text-xl text-gray-700 font-semibold JosefinSansFont">Information Security Multitool</p>
             <p>A versatile tool offering four distinct malware scanning options, ensuring swift on-the-go results. Eliminate the need to navigate various pages and scanners – stop here to obtain the precise results you seek. Post-scan, download a comprehensive report detailing your findings.</p>
             <div className='flex space-x-2 mt-4 max-w-screen-lg mx-auto'>
 
@@ -67,14 +65,14 @@ const Projects = () => {
 
             </div>
 
-            <Link href={'/infosec-multitool'}>
-              <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#b540be] to-[#b540be]'>More Information</p>
+            <Link href={'/infosecurity'}>
+              <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#be5d9c] to-[#be5d9c] JosefinSansFont shadow-xl shadow-gray-400'>More Information</p>
             </Link>
           </div>
           <Image className='rounded-xl group-hover:opacity-10 sm:order-2 order-2' src={ThumbMultitool} alt='/' /> 
           
           <div className="flex flex-col justify-center items-center sm:order-4 order-3">
-          <p className="text-xl text-gray-700 font-bold">Landmass Generator</p>
+          <p className="text-xl text-gray-700 font-semibold JosefinSansFont">Landmass Generator</p>
             <p>An image generator designed to produce shapes resembling land and water masses found on Earth. Leveraging Perlin noise, alongside other mathematical formulas and constants, this tool generates diverse landmass patterns suitable for applications in worldbuilding and various hobbies.</p>
             <div className='flex space-x-2 mt-4 max-w-screen-lg mx-auto'>
 
@@ -115,15 +113,15 @@ const Projects = () => {
               </div>
 
             </div>
-            <Link href={'/landmass-generator'}>
-              <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#b540be] to-[#b540be]'>More Information</p>
+            <Link href={'/landmass'}>
+              <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#be5d9c] to-[#be5d9c] JosefinSansFont shadow-xl shadow-gray-400'>More Information</p>
             </Link>
           </div>
           <Image className='rounded-xl group-hover:opacity-10 sm:order-3 order-4' src={ThumbLandmass} alt='/' /> 
           
           <div className="flex flex-col justify-center items-center sm:order-5 order-5">
             <div className="flex flex-col justify-center items-center sm:order-4 order-3">
-            <p className="text-xl text-gray-700 font-bold">MaciWords</p>
+            <p className="text-xl text-gray-700 font-semibold JosefinSansFont">MaciWords</p>
               <p>A captivating world puzzle inspired by the New York Times' "Wordle" game, with a twist. Players enjoy unlimited attempts to unravel the daily puzzle, each try unveiling new hints to guide them towards a solution. A new word puzzle challenge is refreshed every day!</p>
               <div className='flex space-x-2 mt-4 max-w-screen-lg mx-auto'>
 
@@ -165,7 +163,7 @@ const Projects = () => {
 
             </div>
               <Link href={'/maciwords'}>
-                <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#b540be] to-[#b540be]'>More Information</p>
+                <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#be5d9c] to-[#be5d9c] JosefinSansFont shadow-xl shadow-gray-400'>More Information</p>
               </Link>
             </div>
           </div>
