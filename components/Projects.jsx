@@ -16,10 +16,10 @@ const Projects = () => {
   return (
     <div id='projects' className='mx-auto lg:w-10/12'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
+        <p className='text-xl tracking-widest uppercase text-[#9f3e7d] font-semibold JosefinSansFont'>
           Projects
         </p>
-        <h2 className='py-4'>What I&apos;ve Built</h2>
+        <h2 className='py-4 text-2xl JosefinSansFont'>Web Projects</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           
           <div className="flex flex-col justify-center items-center sm:order-1 order-1">
@@ -68,11 +68,13 @@ const Projects = () => {
             <Link href={'/infosecurity'}>
               <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#be5d9c] to-[#be5d9c] JosefinSansFont shadow-xl shadow-gray-400'>More Information</p>
             </Link>
+            
           </div>
           <Image className='rounded-xl group-hover:opacity-10 sm:order-2 order-2' src={ThumbMultitool} alt='/' /> 
           
           <div className="flex flex-col justify-center items-center sm:order-4 order-3">
-          <p className="text-xl text-gray-700 font-semibold JosefinSansFont">Landmass Generator</p>
+            <div className="sm:hidden border-t border-gray-300 my-8"><hr /></div>
+            <p className="text-xl text-gray-700 font-semibold JosefinSansFont">Landmass Generator</p>
             <p>An image generator designed to produce shapes resembling land and water masses found on Earth. Leveraging Perlin noise, alongside other mathematical formulas and constants, this tool generates diverse landmass patterns suitable for applications in worldbuilding and various hobbies.</p>
             <div className='flex space-x-2 mt-4 max-w-screen-lg mx-auto'>
 
@@ -116,11 +118,13 @@ const Projects = () => {
             <Link href={'/landmass'}>
               <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#be5d9c] to-[#be5d9c] JosefinSansFont shadow-xl shadow-gray-400'>More Information</p>
             </Link>
+            
           </div>
           <Image className='rounded-xl group-hover:opacity-10 sm:order-3 order-4' src={ThumbLandmass} alt='/' /> 
           
           <div className="flex flex-col justify-center items-center sm:order-5 order-5">
             <div className="flex flex-col justify-center items-center sm:order-4 order-3">
+            <div className="sm:hidden border-t border-gray-300 my-8"><hr /></div>
             <p className="text-xl text-gray-700 font-semibold JosefinSansFont">MaciWords</p>
               <p>A captivating world puzzle inspired by the New York Times' "Wordle" game, with a twist. Players enjoy unlimited attempts to unravel the daily puzzle, each try unveiling new hints to guide them towards a solution. A new word puzzle challenge is refreshed every day!</p>
               <div className='flex space-x-2 mt-4 max-w-screen-lg mx-auto'>
@@ -165,6 +169,7 @@ const Projects = () => {
               <Link href={'/maciwords'}>
                 <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#be5d9c] to-[#be5d9c] JosefinSansFont shadow-xl shadow-gray-400'>More Information</p>
               </Link>
+              
             </div>
           </div>
           <Image className='rounded-xl group-hover:opacity-10 sm:order-6 order-6' src={ThumbWords} alt='/' /> 
