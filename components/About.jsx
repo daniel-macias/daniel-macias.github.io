@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import TempImg from '../public/assets/temp.png'
+import LogoSide from '../public/assets/logoSide.png'
 
 const About = () => {
   return (
@@ -21,8 +21,8 @@ const About = () => {
             </p>
           </Link>
         </div>
-        <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-          <Image src={TempImg} className='rounded-xl' alt='/' />
+        <div className='w-50 h-auto m-auto flex items-center justify-center sm:p-10 pt-10 px-40'>
+          <Image src={LogoSide} alt='/' />
         </div>
       </div>
     </div>
