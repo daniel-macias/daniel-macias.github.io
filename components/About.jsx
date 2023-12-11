@@ -13,7 +13,7 @@ const About = () => {
           </p>
           <h2 className='py-4 text-2xl'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
-            I'm a seasoned web developer with a strong background in game development, specializing in crafting immersive web experiences. My passion for creative design is complemented by my commitment to cybersecurity, ensuring that every project I undertake not only captivates users but also prioritizes their data security.
+            I&apos;m a seasoned web developer with a strong background in game development, specializing in crafting immersive web experiences. My passion for creative design is complemented by my commitment to cybersecurity, ensuring that every project I undertake not only captivates users but also prioritizes their data security.
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
