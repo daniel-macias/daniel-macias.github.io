@@ -41,12 +41,23 @@ const infosecurity = () => {
           <p>
           A versatile tool offering four distinct malware scanning options, ensuring swift on-the-go results. Eliminate the need to navigate various pages and scanners – stop here to obtain the precise results you seek. Post-scan, download a comprehensive report detailing your findings.
           </p>
+          <br />
+          <p>
+            <strong>IMPORTANT NOTE ON LIVE DEMO: </strong> As of December 2023, the live demo will show errors for every use case, this is because recent issues with the VirusTotalAPI on Vercel, if you want to see a working live demo, please contact me. Thanks!
+          </p>
           <a
             href='https://github.com/daniel-macias/cybersecurity-swiss-army-knife'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-4 py-2 mt-4 mr-8'><FontAwesomeIcon icon={faGithub} /> Repository</button>
+          </a>
+          <a
+            href='https://cybersecurity-swiss-army-knife.vercel.app/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='px-4 py-2 mt-4 mr-8'>Open Live Demo</button>
           </a>
         </div>
         <div className='col-span-4 md:col-span-2 py-4'>

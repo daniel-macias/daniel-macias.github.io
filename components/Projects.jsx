@@ -126,7 +126,7 @@ const Projects = () => {
             <div className="flex flex-col justify-center items-center sm:order-4 order-3">
             <div className="sm:hidden border-t border-gray-300 my-8"><hr /></div>
             <p className="text-xl text-gray-700 font-semibold JosefinSansFont">MaciWords</p>
-              <p>A captivating world puzzle inspired by the New York Times' "Wordle" game, with a twist. Players enjoy unlimited attempts to unravel the daily puzzle, each try unveiling new hints to guide them towards a solution. A new word puzzle challenge is refreshed every day!</p>
+              <p>A captivating world puzzle inspired by the New York Times&apos; &lsquo;Wordle&rsquo; game, with a twist. Players enjoy unlimited attempts to unravel the daily puzzle, each try unveiling new hints to guide them towards a solution. A new word puzzle challenge is refreshed every day!</p>
               <div className='flex space-x-2 mt-4 max-w-screen-lg mx-auto'>
 
               <div className='p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 flex flex-row items-center'>

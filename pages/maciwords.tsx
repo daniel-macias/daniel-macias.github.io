@@ -39,7 +39,7 @@ const maciwords = () => {
           <p>Project</p>
           <h2 className='text-xl'>Overview</h2>
           <p>
-          A captivating world puzzle inspired by the New York Times' "Wordle" game, with a twist. Players enjoy unlimited attempts to unravel the daily puzzle, each try unveiling new hints to guide them towards a solution. A new word puzzle challenge is refreshed every day!
+          A captivating world puzzle inspired by the New York Times&apos; &lsquo;Wordle&rsquo; game, with a twist. Players enjoy unlimited attempts to unravel the daily puzzle, each try unveiling new hints to guide them towards a solution. A new word puzzle challenge is refreshed every day!
           </p>
           <a
             href='https://github.com/daniel-macias/macipalabras'
@@ -47,6 +47,13 @@ const maciwords = () => {
             rel='noreferrer'
           >
             <button className='px-4 py-2 mt-4 mr-8'><FontAwesomeIcon icon={faGithub} /> Repository</button>
+          </a>
+          <a
+            href='https://macipalabras-daniel-macias-projects.vercel.app/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='px-4 py-2 mt-4 mr-8'>Open Live Demo</button>
           </a>
         </div>
         <div className='col-span-4 md:col-span-2 py-4'>
