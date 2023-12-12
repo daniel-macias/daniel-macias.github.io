@@ -23,7 +23,7 @@ import MetasploitPic from '../public/assets/skills/metasploit.png'
 
 import AWSPic from '../public/assets/skills/aws.png'
 import DockerPic from '../public/assets/skills/docker.png'
-import JestPic from '../public/assets/skills/jest.png'
+import LinuxPic from '../public/assets/skills/linux.png'
 
 const Skills = () => {
   return (
@@ -227,10 +227,10 @@ const Skills = () => {
 
               <div className='p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 flex flex-row items-center'>
                 <div className='m-auto'>
-                  <Image src={JestPic} width='64px' height='64px' alt='/' className='px-2 w-auto h-auto' />
+                  <Image src={LinuxPic} width='64px' height='64px' alt='/' className='px-2 w-auto h-auto' />
                 </div>
                 <div className='flex flex-col items-center justify-center flex-grow'>
-                  <h3 className="text-sm">Jest</h3>
+                  <h3 className="text-sm">Linux</h3>
                 </div>
               </div>
 
