@@ -17,7 +17,7 @@ const maciwords = () => {
   return (
     <div className='w-full'>
       <Head>
-        <title>MaciWords</title>
+        <title>MaciWords | Daniel Macías</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className='w-screen h-[50vh] relative'>
