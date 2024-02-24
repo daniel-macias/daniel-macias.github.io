@@ -1,20 +1,25 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import ImageCarousel from '../components/ImageCarousel'
 import ImgThumb from '../public/assets/multitool/thumb-info.png'
-import ImgMulti0 from '../public/assets/multitool/multi-0.png'
-import ImgMulti1 from '../public/assets/multitool/multi-1.png'
-import ImgMulti2 from '../public/assets/multitool/multi-2.png'
-import ImgMulti3 from '../public/assets/multitool/multi-3.png'
+import ImgMulti0 from '../public/assets/multitool/security_0.png'
+import ImgMulti1 from '../public/assets/multitool/security_1.png'
+import ImgMulti2 from '../public/assets/multitool/security_2.png'
+import ImgMulti3 from '../public/assets/multitool/security_3.png'
 
 const infosecurity = () => {
   return (
     <div className='w-full'>
+      <Head>
+        <title>Quick Vulnerability Scanner | Daniel Macías</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
         <Image
@@ -25,8 +30,8 @@ const infosecurity = () => {
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2 JosefinSansFont font-semibold'>Infosec MultiTool</h2>
-          <h3 className='JosefinSansFont'>Node JS | React JS | JavaScript | Next JS | Tailwind</h3>
+          <h2 className='py-2 JosefinSansFont font-semibold'>Quick Vulnerability Scanner</h2>
+          <h3 className='JosefinSansFont'>Node JS | React JS | TypeScript | Next JS | Tailwind</h3>
         </div>
       </div>
       
@@ -42,18 +47,15 @@ const infosecurity = () => {
           A versatile tool offering four distinct malware scanning options, ensuring swift on-the-go results. Eliminate the need to navigate various pages and scanners – stop here to obtain the precise results you seek. Post-scan, download a comprehensive report detailing your findings.
           </p>
           <br />
-          <p>
-            <strong>IMPORTANT NOTE ON LIVE DEMO: </strong> As of December 2023, the live demo will show errors for every use case, this is because recent issues with the VirusTotalAPI on Vercel, if you want to see a working live demo, please contact me. Thanks!
-          </p>
           <a
-            href='https://github.com/daniel-macias/cybersecurity-swiss-army-knife'
+            href='https://github.com/daniel-macias/quick-vulnerability-scanner'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-4 py-2 mt-4 mr-8'><FontAwesomeIcon icon={faGithub} /> Repository</button>
           </a>
           <a
-            href='https://cybersecurity-swiss-army-knife.vercel.app/'
+            href='https://quick-vulnerability-scanner.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >

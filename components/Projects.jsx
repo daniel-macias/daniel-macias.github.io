@@ -23,7 +23,7 @@ const Projects = () => {
         <div className='grid md:grid-cols-2 gap-8'>
           
           <div className="flex flex-col justify-center items-center sm:order-1 order-1">
-            <p className="text-xl text-gray-700 font-semibold JosefinSansFont">Information Security Multitool</p>
+            <p className="text-xl text-gray-700 font-semibold JosefinSansFont">Quick Vulnerability Scanner</p>
             <p>A versatile tool offering four distinct malware scanning options, ensuring swift on-the-go results. Eliminate the need to navigate various pages and scanners – stop here to obtain the precise results you seek. Post-scan, download a comprehensive report detailing your findings.</p>
             <div className='flex space-x-2 mt-4 max-w-screen-lg mx-auto'>
 
@@ -47,10 +47,10 @@ const Projects = () => {
 
               <div className='p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 flex flex-row items-center'>
                 <div className='m-auto'>
-                  <Image src={JavascriptPic} width='64px' height='64px' alt='/' className='px-2 w-auto h-auto' />
+                  <Image src={TypescriptPic} width='64px' height='64px' alt='/' className='px-2 w-auto h-auto' />
                 </div>
                 <div className='flex flex-col items-center justify-center flex-grow'>
-                  <h3 className="text-sm">JavaScript</h3>
+                  <h3 className="text-sm">TypeScript</h3>
                 </div>
               </div>
 
