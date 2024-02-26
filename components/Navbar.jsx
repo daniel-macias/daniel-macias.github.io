@@ -8,12 +8,15 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import LogoDMR from '../public/assets/logoDMR.png'
+import { useRouter } from 'next/router';
+import path from 'path';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('transparent');
   const [linkColor, setLinkColor] = useState('#1f2937');
+  const { pathname } = useRouter(); // Get the current path
 
   const handleNav = () => {
     setNav(!nav);
