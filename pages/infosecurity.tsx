@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head'
@@ -13,7 +13,13 @@ import ImgMulti1 from '../public/assets/multitool/security_1.png'
 import ImgMulti2 from '../public/assets/multitool/security_2.png'
 import ImgMulti3 from '../public/assets/multitool/security_3.png'
 
+
 const infosecurity = () => {
+
+  const images = [ImgMulti0, ImgMulti1, ImgMulti2, ImgMulti3];
+
+
+
   return (
     <div className='w-full'>
       <Head>
@@ -65,7 +71,7 @@ const infosecurity = () => {
         <div className='col-span-4 md:col-span-2 py-4'>
           <div className='p-2'>
             <div className='md:grid-cols-1 max-h-5'>
-            <ImageCarousel images={[ImgMulti0,ImgMulti2,ImgMulti1,ImgMulti3]}/>
+              <ImageCarousel images={images} />   
             </div>
           </div>
         </div>

@@ -1,54 +1,66 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight, faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const ImageCarousel = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
 
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === images.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  // Setup emblaApi event listeners
+  React.useEffect(() => {
+    if (!emblaApi) return;
+    emblaApi.on("select", onSelect);
+    onSelect(); // Initial selection
+    return () => emblaApi.off("select", onSelect);
+  }, [emblaApi, onSelect]);
 
   return (
-    <div className='w-full h-full m-auto py-16 px-4 relative group'>
-      <Image
-        src={images[currentIndex]}
-        alt={`Slide ${currentIndex + 1}`}
-        layout="fill"
-        objectFit="contain"
-        className="w-full h-full rounded-sm bg-center bg-cover duration-500"
-      />
+    <div className="embla">
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          {images.map((src, index) => (
+            <div className="embla__slide" key={index}>
+              <Image src={src} alt={`Slide ${index}`} objectFit="contain" />
+            </div>
+          ))}
+        </div>
+      </div>
       {/* Left Arrow */}
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <FontAwesomeIcon icon={faChevronLeft} onClick={prevSlide} size={30} />
-      </div>
-      {/* Right Arrow */}
-      <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <FontAwesomeIcon icon={faChevronRight} onClick={nextSlide} size={30} />
-      </div>
-      {/* Circles */}
-      <div className=' translate-y-[225%] flex justify-center py-2'>
-        {images.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className={`text-lg m-0.5 cursor-pointer ${slideIndex === currentIndex ? 'text-gray-900' : 'text-gray-400'}`}
-          >
-            <FontAwesomeIcon icon={faCircle} />
-          </div>
+      <FontAwesomeIcon 
+        icon={faChevronLeft} 
+        onClick={scrollPrev} 
+        className="absolute top-1/2 left-5 -translate-y-1/2 z-20 p-3 bg-black bg-opacity-40 text-white cursor-pointer rounded-full" 
+        size="lg" 
+      />
+
+      <FontAwesomeIcon 
+        icon={faChevronRight} 
+        onClick={scrollNext} 
+        className="absolute top-1/2 right-5 -translate-y-1/2 z-20 p-3 bg-black bg-opacity-40 text-white cursor-pointer rounded-full" 
+        size="lg" 
+      />
+      <div className="embla__dots">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            className={`embla__dot ${index === selectedIndex ? "is-selected" : ""}`}
+            onClick={() => emblaApi && emblaApi.scrollTo(index)}
+          />
         ))}
       </div>
     </div>
