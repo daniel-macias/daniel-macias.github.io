@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <div id='projects' className='mx-auto lg:w-10/12'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='text-xl tracking-widest uppercase text-[#9f3e7d] font-semibold JosefinSansFont'>
+        <p className='text-xl tracking-widest uppercase text-[#4B007F] font-semibold JosefinSansFont'>
           Projects
         </p>
         <h2 className='py-4 text-2xl JosefinSansFont'>Web Projects</h2>
@@ -66,7 +66,7 @@ const Projects = () => {
             </div>
 
             <Link href={'/infosecurity'}>
-              <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#be5d9c] to-[#be5d9c] JosefinSansFont shadow-xl shadow-gray-400'>More Information</p>
+              <p className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500'>More Information</p>
             </Link>
             
           </div>
@@ -116,7 +116,7 @@ const Projects = () => {
 
             </div>
             <Link href={'/landmass'}>
-              <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#be5d9c] to-[#be5d9c] JosefinSansFont shadow-xl shadow-gray-400'>More Information</p>
+              <p className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500'>More Information</p>
             </Link>
             
           </div>
@@ -167,7 +167,7 @@ const Projects = () => {
 
             </div>
               <Link href={'/maciwords'}>
-                <p className='text-center py-2 px-3 mt-2 rounded-lg bg-[#9f3e7d] text-gray-100 text-lg cursor-pointer hover:bg-gradient-to-r from-[#be5d9c] to-[#be5d9c] JosefinSansFont shadow-xl shadow-gray-400'>More Information</p>
+                <p className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500'>More Information</p>
               </Link>
               
             </div>

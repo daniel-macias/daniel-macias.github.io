@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import LogoDMR from '../public/assets/logoDMR.png'
+import LogoDMR from '../public/assets/logoSide.png'
 import { useRouter } from 'next/router';
 import path from 'path';
 
@@ -49,7 +49,7 @@ const Navbar = () => {
             <Image
               src={LogoDMR}
               alt='/'
-              width='125'
+
               height='50'
               className='cursor-pointer'
             />
@@ -103,7 +103,7 @@ const Navbar = () => {
               <Link href='/'>
                   <Image
                     src={LogoDMR}
-                    width='87'
+
                     height='35'
                     alt='/'
                   />
@@ -151,7 +151,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className='pt-40'>
-              <p className='uppercase tracking-widest text-[#9f3e7d] JosefinSansFont font-semibold'>
+              <p className='uppercase tracking-widest text-[#4B007F] JosefinSansFont font-semibold'>
                 Let&#39;s Talk
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>

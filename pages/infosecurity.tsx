@@ -58,14 +58,14 @@ const infosecurity = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <button className='px-4 py-2 mt-4 mr-8'><FontAwesomeIcon icon={faGithub} /> Repository</button>
+            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500 mr-2'><FontAwesomeIcon icon={faGithub} /> Repository</button>
           </a>
           <a
             href='https://quick-vulnerability-scanner.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='px-4 py-2 mt-4 mr-8'>Open Live Demo</button>
+            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500 mx-2'>Open Live Demo</button>
           </a>
         </div>
         <div className='col-span-4 md:col-span-2 py-4'>

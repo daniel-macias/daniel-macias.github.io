@@ -29,7 +29,7 @@ const Skills = () => {
   return (
     <div id='skills' className='mx-auto lg:w-10/12 lg:h-screen p-2'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-        <p className='text-xl tracking-widest uppercase text-[#9f3e7d] font-semibold JosefinSansFont'>
+        <p className='text-xl tracking-widest uppercase text-[#4B007F] font-semibold JosefinSansFont'>
           Skills
         </p>
         
