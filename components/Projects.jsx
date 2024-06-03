@@ -70,7 +70,7 @@ const Projects = () => {
             </Link>
             
           </div>
-          <Image className='rounded-xl group-hover:opacity-10 sm:order-2 order-2' src={ThumbMultitool} alt='/' /> 
+          <Image className='rounded-sm group-hover:opacity-10 sm:order-2 order-2' src={ThumbMultitool} alt='/' /> 
           
           <div className="flex flex-col justify-center items-center sm:order-4 order-3">
             <div className="sm:hidden border-t border-gray-300 my-8"><hr /></div>
@@ -120,7 +120,7 @@ const Projects = () => {
             </Link>
             
           </div>
-          <Image className='rounded-xl group-hover:opacity-10 sm:order-3 order-4' src={ThumbLandmass} alt='/' /> 
+          <Image className='rounded-sm group-hover:opacity-10 sm:order-3 order-4' src={ThumbLandmass} alt='/' /> 
           
           <div className="flex flex-col justify-center items-center sm:order-5 order-5">
             <div className="flex flex-col justify-center items-center sm:order-4 order-3">
@@ -172,7 +172,7 @@ const Projects = () => {
               
             </div>
           </div>
-          <Image className='rounded-xl group-hover:opacity-10 sm:order-6 order-6' src={ThumbWords} alt='/' /> 
+          <Image className='rounded-sm group-hover:opacity-10 sm:order-6 order-6' src={ThumbWords} alt='/' /> 
         </div>
       </div>
     </div>

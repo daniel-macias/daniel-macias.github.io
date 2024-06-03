@@ -14,14 +14,15 @@ const Main = () => {
 
   return (
     <div id='home' className='relative w-full h-screen text-center md:overflow-hidden'>
-          <WavyBackground className="mx-auto">
-      <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
-        Hero waves are cool
-      </p>
-      <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-        Leverage the power of canvas to create a beautiful hero section
-      </p>
-    </WavyBackground>
+      <WavyBackground className="mx-auto">
+        <h1 className="text-4xl md:text-4xl lg:text-7xl text-[#4B007F] JosefinSansFont font-semibold inter-var text-center">
+          Daniel Macías R.
+        </h1>
+        <h2 className='py-2 text-gray-700 JosefinSansFont'>Full-Stack Web Developer</h2>
+        <p className='uppercase text-sm tracking-widest text-gray-600 JosefinSansFont font-semibold'>
+              Crafting web experiences with a touch of creativity
+            </p>
+      </WavyBackground>
     </div>
   );
 };

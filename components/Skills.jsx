@@ -25,6 +25,47 @@ import AWSPic from '../public/assets/skills/aws.png'
 import DockerPic from '../public/assets/skills/docker.png'
 import LinuxPic from '../public/assets/skills/linux.png'
 
+const skillsData = [
+  {
+    category: 'Preferred Web Stack',
+    items: [
+      { name: 'React.js', img: ReactPic },
+      { name: 'Tailwind', img: TailwindPic },
+      { name: 'Next.js', img: NextPic },
+      { name: 'Node.js', img: NodePic },
+      { name: 'MongoDB', img: MongoPic },
+      { name: 'SQL', img: SQLPic },
+    ],
+  },
+  {
+    category: 'Programming Languages',
+    items: [
+      { name: 'JavaScript', img: JavascriptPic },
+      { name: 'TypeScript', img: TypescriptPic },
+      { name: 'Python', img: PythonPic },
+      { name: 'GoLang', img: GoPic },
+      { name: 'C++', img: CplusplsPic },
+      { name: 'C#', img: CsharpPic },
+    ],
+  },
+  {
+    category: 'Security',
+    items: [
+      { name: 'Wireshark', img: WiresharkPic },
+      { name: 'BurpSuite', img: BurpsuitePic },
+      { name: 'Metasploit', img: MetasploitPic },
+    ],
+  },
+  {
+    category: 'Other',
+    items: [
+      { name: 'Amazon Web Services', img: AWSPic },
+      { name: 'Docker', img: DockerPic },
+      { name: 'Linux', img: LinuxPic },
+    ],
+  },
+];
+
 const Skills = () => {
   return (
     <div id='skills' className='mx-auto lg:w-10/12 lg:h-screen p-2'>

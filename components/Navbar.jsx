@@ -110,7 +110,7 @@ const Navbar = () => {
               </Link>
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                className='rounded-sm shadow-lg shadow-gray-400 p-3 cursor-pointer'
               >
                 <FontAwesomeIcon icon={faXmark} />
               </div>
@@ -160,7 +160,7 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <div className='rounded-sm shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FontAwesomeIcon icon={faLinkedin} />
                   </div>
                 </a>
@@ -169,14 +169,14 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <div className='rounded-sm shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FontAwesomeIcon icon={faGithub} />
                   </div>
                 </a>
                 <Link href='/#contact'>
                   <div
                     onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                    className='rounded-sm shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                   >
                     <FontAwesomeIcon icon={faEnvelope} />
                   </div>
