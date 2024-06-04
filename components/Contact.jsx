@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faAnglesUp } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import LogoSide from '../public/assets/logoSide.png';
+import LogoBanner from '../public/dmr-banner.png'; // Import the new image
 
 const Contact = () => {
   return (
@@ -14,14 +15,24 @@ const Contact = () => {
           Contact
         </p>
         <h2 className='py-4 font-semibold JosefinSansFont'>Get In Touch</h2>
+        <div className='lg:hidden flex justify-center'>
+          <Image
+            className='rounded-sm hover:scale-105 ease-in duration-300 mx-auto'
+            src={LogoBanner}
+            alt='/'
+            height={150}
+          />
+        </div>
         <div className='grid lg:grid-cols-4 gap-8'>
           {/* Left column */}
-          <div className='col-span-1 w-full h-full shadow-xl shadow-gray-400 rounded-sm p-4 flex items-center justify-center'>
-            <Image
-              className='rounded-sm hover:scale-105 ease-in duration-300'
-              src={LogoSide}
-              alt='/'
-            />
+          <div className='col-span-1 w-full h-full p-4 flex items-center justify-center'>
+            <div className='hidden lg:block'>
+              <Image
+                className='rounded-sm hover:scale-105 ease-in duration-300'
+                src={LogoSide}
+                alt='/'
+              />
+            </div>
           </div>
 
           {/* Right column */}
@@ -31,7 +42,7 @@ const Contact = () => {
                 <h2 className='py-2 font-semibold JosefinSansFont'>Daniel Macías</h2>
                 <p>Full-Stack Developer</p>
                 <p className='py-4'>
-                  I am available for freelance or full-time positions. Contact me and let`&apos;`s talk.
+                  I am available for freelance or full-time positions. Contact me and let&apos;s talk.
                 </p>
               </div>
               <div>
@@ -41,11 +52,10 @@ const Contact = () => {
                     href='https://www.linkedin.com/in/daniel-mac%C3%ADas-reynaud-b4b69a152/'
                     target='_blank'
                     rel='noreferrer'
-                    className='flex items-center space-x-2'
+                    className='flex-1 flex items-center justify-center space-x-2 mx-2'
                   >
-                    <div className='rounded-sm shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <div className='rounded-sm shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 flex items-center justify-center w-full'>
                       <FontAwesomeIcon size="2x" icon={faLinkedin} />
-                      <span className='hidden md:inline ml-6 text-lg'>Daniel Macías Reynaud</span>
                     </div>
                     
                   </a>
@@ -53,16 +63,15 @@ const Contact = () => {
                     href='https://github.com/daniel-macias'
                     target='_blank'
                     rel='noreferrer'
-                    className='flex items-center space-x-2'
+                    className='flex-1 flex items-center justify-center space-x-2 mx-2'
                   >
-                    <div className='rounded-sm shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <div className='rounded-sm shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 flex items-center justify-center w-full'>
                       <FontAwesomeIcon size="2x" icon={faGithub} />
-                      <span className='hidden md:inline ml-6 text-lg'>daniel-macias</span>
                     </div>
                     
                   </a>
-                  <a href='mailto:maciasreyaud@gmail.com'>
-                    <div className='rounded-sm shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                  <a href='mailto:maciasreyaud@gmail.com' className='flex-1 flex items-center justify-center space-x-2 mx-2'>
+                    <div className='rounded-sm shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 flex items-center justify-center w-full'>
                       <FontAwesomeIcon size="2x" icon={faEnvelope} />
                     </div>
                   </a>
