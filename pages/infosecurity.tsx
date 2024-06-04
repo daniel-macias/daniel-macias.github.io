@@ -12,6 +12,7 @@ import ImgMulti0 from '../public/assets/multitool/security_0.png'
 import ImgMulti1 from '../public/assets/multitool/security_1.png'
 import ImgMulti2 from '../public/assets/multitool/security_2.png'
 import ImgMulti3 from '../public/assets/multitool/security_3.png'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 const infosecurity = () => {
@@ -44,10 +45,11 @@ const infosecurity = () => {
 
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
         <div className='col-span-3'>
-        <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
-        </Link>
-          <p>Project</p>
+          <Link href='/#projects'>
+            <div className='w-10 h-10 flex items-center justify-center rounded-sm bg-[#000] text-gray-100 cursor-pointer hover:bg-[#555] shadow-xl shadow-gray-400 transition duration-500 mb-2'>
+              <FontAwesomeIcon icon={faArrowLeft} />
+            </div>
+          </Link>
           <h2 className='text-xl'>Overview</h2>
           <p>
           A versatile tool offering four distinct malware scanning options, ensuring swift on-the-go results. Eliminate the need to navigate various pages and scanners – stop here to obtain the precise results you seek. Post-scan, download a comprehensive report detailing your findings.

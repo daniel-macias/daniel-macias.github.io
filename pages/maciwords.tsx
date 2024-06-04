@@ -11,6 +11,7 @@ import ImgThumb from '../public/assets/puzzle/thumb-words.png'
 import ImgPuzzle0 from '../public/assets/puzzle/puzzle-0.png'
 import ImgPuzzle1 from '../public/assets/puzzle/puzzle-1.png'
 import ImgPuzzle2 from '../public/assets/puzzle/puzzle-2.png'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 const maciwords = () => {
@@ -39,9 +40,10 @@ const maciwords = () => {
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
         <div className='col-span-3'>
         <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
-        </Link>
-          <p>Project</p>
+            <div className='w-10 h-10 flex items-center justify-center rounded-sm bg-[#000] text-gray-100 cursor-pointer hover:bg-[#555] shadow-xl shadow-gray-400 transition duration-500 mb-2'>
+              <FontAwesomeIcon icon={faArrowLeft} />
+            </div>
+          </Link>
           <h2 className='text-xl'>Overview</h2>
           <p>
           A captivating world puzzle inspired by the New York Times&apos; &lsquo;Wordle&rsquo; game, with a twist. Players enjoy unlimited attempts to unravel the daily puzzle, each try unveiling new hints to guide them towards a solution. A new word puzzle challenge is refreshed every day!

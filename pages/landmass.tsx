@@ -11,6 +11,7 @@ import ImgThumb from '../public/assets/landmass/thumb-landmass.png'
 import ImgLandmass0 from '../public/assets/landmass/landmass-0.png'
 import ImgLandmass1 from '../public/assets/landmass/landmass-1.png'
 import ImgLandmass2 from '../public/assets/landmass/landmass-2.png'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 const landmass = () => {
@@ -39,9 +40,10 @@ const landmass = () => {
       <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8'>
         <div className='col-span-3'>
         <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
-        </Link>
-          <p>Project</p>
+            <div className='w-10 h-10 flex items-center justify-center rounded-sm bg-[#000] text-gray-100 cursor-pointer hover:bg-[#555] shadow-xl shadow-gray-400 transition duration-500 mb-2'>
+              <FontAwesomeIcon icon={faArrowLeft} />
+            </div>
+          </Link>
           <h2 className='text-xl'>Overview</h2>
           <p>
           An image generator designed to produce shapes resembling land and water masses found on Earth. Leveraging Perlin noise, alongside other mathematical formulas and constants, this tool generates diverse landmass patterns suitable for applications in worldbuilding and various hobbies.
