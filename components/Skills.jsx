@@ -3,7 +3,6 @@ import React from 'react';
 import NodePic from '../public/assets/skills/node.png';
 import ReactPic from '../public/assets/skills/react.png';
 import TailwindPic from '../public/assets/skills/tailwind.png';
-import MUIPic from '../public/assets/skills/mui.png';
 import NextPic from '../public/assets/skills/nextjs.png';
 import MongoPic from '../public/assets/skills/mongo.png';
 import SQLPic from '../public/assets/skills/sql.png';
@@ -13,33 +12,30 @@ import GoPic from '../public/assets/skills/go.png';
 import PythonPic from '../public/assets/skills/python.png';
 import CplusplsPic from '../public/assets/skills/cplusplus.png';
 import CsharpPic from '../public/assets/skills/csharp.png';
-import WiresharkPic from '../public/assets/skills/wireshark.png';
-import BurpsuitePic from '../public/assets/skills/burpsuite.png';
-import MetasploitPic from '../public/assets/skills/metasploit.png';
 import AWSPic from '../public/assets/skills/aws.png';
 import DockerPic from '../public/assets/skills/docker.png';
 import LinuxPic from '../public/assets/skills/linux.png';
+import GraphQLPic from '../public/assets/skills/graphql.png';
+import NestJSPic from '../public/assets/skills/nestjs.png';
+import Selenium from '../public/assets/skills/selenium.png';
 
 const skillsData = [
   {
-    category: 'Preferred Web Stack',
-    subcategories: [
-      {
-        subcategory: 'Front End',
-        items: [
-          { name: 'React.js', img: ReactPic },
-          { name: 'Tailwind', img: TailwindPic },
-          { name: 'Next.js', img: NextPic },
-        ],
-      },
-      {
-        subcategory: 'Back End',
-        items: [
-          { name: 'Node.js', img: NodePic },
-          { name: 'MongoDB', img: MongoPic },
-          { name: 'SQL', img: SQLPic },
-        ],
-      },
+    category: 'Frontend Web',
+    items: [
+      { name: 'React.js', img: ReactPic },
+      { name: 'Tailwind', img: TailwindPic },
+      { name: 'Next.js', img: NextPic },
+      { name: 'GraphQL', img: GraphQLPic },
+    ],
+  },
+  {
+    category: 'Backend Web',
+    items: [
+      { name: 'Node.js', img: NodePic },
+      { name: 'Nest.js', img: NestJSPic },
+      { name: 'MongoDB', img: MongoPic },
+      { name: 'SQL', img: SQLPic },
     ],
   },
   {
@@ -54,18 +50,11 @@ const skillsData = [
     ],
   },
   {
-    category: 'Security',
-    items: [
-      { name: 'Wireshark', img: WiresharkPic },
-      { name: 'BurpSuite', img: BurpsuitePic },
-      { name: 'Metasploit', img: MetasploitPic },
-    ],
-  },
-  {
     category: 'Other',
     items: [
       { name: 'Amazon Web Services', img: AWSPic },
       { name: 'Docker', img: DockerPic },
+      { name: 'Selenium', img: Selenium },
       { name: 'Linux', img: LinuxPic },
     ],
   },
@@ -83,38 +72,18 @@ const Skills = () => {
           {skillsData.map((category, index) => (
             <div key={index} className="p-4 bg-gray-100">
               <h2 className='text-xl JosefinSansFont'>{category.category}</h2>
-              {category.subcategories ? (
-                category.subcategories.map((subcategory, subindex) => (
-                  <div key={subindex}>
-                    <h3 className='text-lg JosefinSansFont pt-4'>{subcategory.subcategory}</h3>
-                    <div className="grid grid-cols-3 gap-4 mt-4">
-                      {subcategory.items.map((item, idx) => (
-                        <div key={idx} className='p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 flex flex-col items-center'>
-                          <div className='w-20 h-20 flex items-center justify-center'>
-                            <Image src={item.img} alt={item.name} className='w-full h-full object-contain' />
-                          </div>
-                          <div className='flex flex-col items-center justify-center mt-4'>
-                            <h3 className="text-sm text-center">{item.name}</h3>
-                          </div>
-                        </div>
-                      ))}
+              <div className="grid grid-cols-4 gap-4 mt-4">
+                {category.items.map((item, idx) => (
+                  <div key={idx} className='p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 flex flex-col items-center'>
+                    <div className='w-20 h-20 flex items-center justify-center'>
+                      <Image src={item.img} alt={item.name} className='w-full h-full object-contain' />
+                    </div>
+                    <div className='flex flex-col items-center justify-center mt-4'>
+                      <h3 className="text-sm text-center">{item.name}</h3>
                     </div>
                   </div>
-                ))
-              ) : (
-                <div className="grid grid-cols-3 gap-4 mt-4">
-                  {category.items.map((item, idx) => (
-                    <div key={idx} className='p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 flex flex-col items-center'>
-                      <div className='w-20 h-20 flex items-center justify-center'>
-                        <Image src={item.img} alt={item.name} className='w-full h-full object-contain' />
-                      </div>
-                      <div className='flex flex-col items-center justify-center mt-4'>
-                        <h3 className="text-sm text-center">{item.name}</h3>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
+                ))}
+              </div>
             </div>
           ))}
         </div>
