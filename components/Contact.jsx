@@ -54,7 +54,7 @@ const Contact = () => {
                     rel='noreferrer'
                     className='flex-1 flex items-center justify-center space-x-2 mx-2'
                   >
-                    <div className='rounded-sm shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 flex items-center justify-center w-full'>
+                    <div className='p-6 cursor-pointer hover:scale-110 ease-in duration-300 flex items-center justify-center w-full'>
                       <FontAwesomeIcon size="2x" icon={faLinkedin} />
                     </div>
                     
@@ -65,13 +65,13 @@ const Contact = () => {
                     rel='noreferrer'
                     className='flex-1 flex items-center justify-center space-x-2 mx-2'
                   >
-                    <div className='rounded-sm shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 flex items-center justify-center w-full'>
+                    <div className='p-6 cursor-pointer hover:scale-110 ease-in duration-300 flex items-center justify-center w-full'>
                       <FontAwesomeIcon size="2x" icon={faGithub} />
                     </div>
                     
                   </a>
                   <a href='mailto:maciasreyaud@gmail.com' className='flex-1 flex items-center justify-center space-x-2 mx-2'>
-                    <div className='rounded-sm shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 flex items-center justify-center w-full'>
+                    <div className='p-6 cursor-pointer hover:scale-110 ease-in duration-300 flex items-center justify-center w-full'>
                       <FontAwesomeIcon size="2x" icon={faEnvelope} />
                     </div>
                   </a>
@@ -82,7 +82,7 @@ const Contact = () => {
         </div>
         <div className='flex justify-center py-12'>
           <Link href='/'>
-            <div className='rounded-sm shadow-lg shadow-gray-400 py-4 px-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+            <div className='py-4 px-5 cursor-pointer hover:scale-110 ease-in duration-300'>
               <FontAwesomeIcon icon={faAnglesUp} />
             </div>
           </Link>
