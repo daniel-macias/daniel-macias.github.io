@@ -61,7 +61,6 @@ const Projects = () => {
             <p className="text-xl text-gray-700 font-semibold JosefinSansFont">Landmass Generator</p>
             <p>An image generator designed to produce shapes resembling land and water masses found on Earth. Leveraging Perlin noise, alongside other mathematical formulas and constants, this tool generates diverse landmass patterns suitable for applications in worldbuilding and various hobbies.</p>
             <div className='flex space-x-2 mt-4 max-w-screen-lg mx-auto'>
-              <TechStackIcon src={NodePic} name="Node.js" />
               <TechStackIcon src={ReactPic} name="React.js" />
               <TechStackIcon src={TypescriptPic} name="TypeScript" />
               <TechStackIcon src={MUIPic} name="MUI" />
@@ -78,7 +77,6 @@ const Projects = () => {
             <p className="text-xl text-gray-700 font-semibold JosefinSansFont">MaciWords</p>
             <p>A captivating world puzzle inspired by the New York Times&apos; &lsquo;Wordle&rsquo; game, with a twist. Players enjoy unlimited attempts to unravel the daily puzzle, each try unveiling new hints to guide them towards a solution. A new word puzzle challenge is refreshed every day!</p>
             <div className='flex space-x-2 mt-4 max-w-screen-lg mx-auto'>
-              <TechStackIcon src={NodePic} name="Node.js" />
               <TechStackIcon src={ReactPic} name="React.js" />
               <TechStackIcon src={TypescriptPic} name="TypeScript" />
               <TechStackIcon src={NextPic} name="Next.js" />
@@ -97,7 +95,7 @@ const Projects = () => {
 const TechStackIcon = ({ src, name }) => (
   <div className='p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 flex flex-row items-center'>
     <div className='m-auto'>
-      <Image src={src} width='64px' height='64px' alt='/' className='px-2 w-auto h-auto' />
+      <Image src={src} width='64px' height='64px' alt='/' className='px-2 w-auto max-h-10' />
     </div>
     <div className='flex flex-col items-center justify-center flex-grow'>
       <h3 className="text-sm hidden sm:block">{name}</h3>

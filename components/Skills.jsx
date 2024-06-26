@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React from 'react';
 import NodePic from '../public/assets/skills/node.png';
 import ReactPic from '../public/assets/skills/react.png';
-import TailwindPic from '../public/assets/skills/tailwind.png';
 import NextPic from '../public/assets/skills/nextjs.png';
 import MongoPic from '../public/assets/skills/mongo.png';
 import SQLPic from '../public/assets/skills/sql.png';
@@ -14,19 +13,20 @@ import CplusplsPic from '../public/assets/skills/cplusplus.png';
 import CsharpPic from '../public/assets/skills/csharp.png';
 import AWSPic from '../public/assets/skills/aws.png';
 import DockerPic from '../public/assets/skills/docker.png';
-import LinuxPic from '../public/assets/skills/linux.png';
 import GraphQLPic from '../public/assets/skills/graphql.png';
 import NestJSPic from '../public/assets/skills/nestjs.png';
 import Selenium from '../public/assets/skills/selenium.png';
+import VuePic from '../public/assets/skills/vue.png';
+import NuxtPic from '../public/assets/skills/nuxt.png';
 
 const skillsData = [
   {
     category: 'Frontend Web',
     items: [
       { name: 'React.js', img: ReactPic },
-      { name: 'Tailwind', img: TailwindPic },
       { name: 'Next.js', img: NextPic },
-      { name: 'GraphQL', img: GraphQLPic },
+      { name: 'Vue.js', img: VuePic },
+      { name: 'Nuxt.js', img: NuxtPic },
     ],
   },
   {
@@ -55,7 +55,7 @@ const skillsData = [
       { name: 'Amazon Web Services', img: AWSPic },
       { name: 'Docker', img: DockerPic },
       { name: 'Selenium', img: Selenium },
-      { name: 'Linux', img: LinuxPic },
+      { name: 'GraphQL', img: GraphQLPic },
     ],
   },
 ];
