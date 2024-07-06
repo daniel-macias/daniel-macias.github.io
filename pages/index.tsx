@@ -4,7 +4,8 @@ import Contact from '../components/Contact'
 import Main from '../components/Main'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
-
+import { GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Home() {
   return (
@@ -39,3 +40,11 @@ export default function Home() {
     </div>
   )
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
+    },
+  };
+};
