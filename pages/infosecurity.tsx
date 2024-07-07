@@ -18,7 +18,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
 
-export default function infosecurity () {
+export default function Infosecurity () {
   const { t } = useTranslation('common');
   const images = [ImgMulti0, ImgMulti1, ImgMulti2, ImgMulti3];
 

@@ -17,7 +17,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
 
-export default function landmass () {
+export default function Landmass () {
   const { t } = useTranslation('common');
   return (
     <div className='w-full'>
