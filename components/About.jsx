@@ -2,22 +2,25 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import LogoSide from '../public/assets/logoSide.png'
+import { useTranslation } from 'next-i18next';
 
 const About = () => {
+  const { t } = useTranslation('common'); //remember to check common.json to see strings
+
   return (
     <div id='about' className='mx-auto lg:w-10/12 md:h-screen p-2 flex items-center py-16 '> 
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='uppercase text-xl tracking-widest text-[#4B007F] JosefinSansFont '>
-            About
+            {t('about')}
           </p>
-          <h2 className='py-4 text-2xl'>Who I Am</h2>
+          <h2 className='py-4 text-2xl'>{t('about-title')}</h2>
           <p className='py-2 text-gray-600'>
-            I&apos;m a seasoned web developer with a strong background in game development, specializing in crafting immersive web experiences. My passion for creative design is complemented by my commitment to cybersecurity, ensuring that every project I undertake not only captivates users but also prioritizes their data security.
+          {t('about-desc')}
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
-              Check out some of my latest projects.
+            {t('about-link')}
             </p>
           </Link>
         </div>

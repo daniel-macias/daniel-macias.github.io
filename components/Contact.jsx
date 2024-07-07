@@ -5,16 +5,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faAnglesUp } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import LogoSide from '../public/assets/logoSide.png';
-import LogoBanner from '../public/dmr-banner.png'; // Import the new image
+import LogoBanner from '../public/dmr-banner.png';
+import { useTranslation } from 'next-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation('common'); //remember to check common.json to see strings
   return (
     <div id='contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-2 py-16 lg:w-10/12'>
         <p className='text-xl tracking-widest uppercase text-[#4B007F] font-semibold JosefinSansFont'>
-          Contact
+          {t('contact')}
         </p>
-        <h2 className='py-4 font-semibold JosefinSansFont'>Get In Touch</h2>
+        <h2 className='py-4 font-semibold JosefinSansFont'>{t('contact-sub-title')}</h2>
         <div className='lg:hidden flex justify-center'>
           <Image
             className='rounded-sm hover:scale-105 ease-in duration-300 mx-auto'
@@ -40,13 +42,13 @@ const Contact = () => {
             <div className='p-4'>
               <div className='pb-4'>
                 <h2 className='py-2 font-semibold JosefinSansFont'>Daniel Macías</h2>
-                <p>Full-Stack Developer</p>
+                <p>{t('title')}</p>
                 <p className='py-4'>
-                  I am available for freelance or full-time positions. Contact me and let&apos;s talk.
+                  {t('contact-desc')}
                 </p>
               </div>
               <div>
-                <p className='uppercase pt-8'>Connect With Me</p>
+                <p className='pt-8'>{t('contact-connect')}</p>
                 <div className='flex items-center justify-between py-4'>
                   <a
                     href='https://www.linkedin.com/in/daniel-mac%C3%ADas-reynaud-b4b69a152/'

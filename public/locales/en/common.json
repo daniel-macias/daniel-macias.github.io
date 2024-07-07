@@ -1,5 +1,28 @@
 {
     "name": "Daniel Macías R.",
     "title": "Full-Stack Web Developer",
-    "subtitle": "Crafting web experiences with a touch of creativity"
+    "subtitle": "Crafting web experiences with a touch of creativity",
+    "home" : "Home",
+
+    "about": "About",
+    "about-title": "Who I am",
+    "about-desc": "I'm a seasoned web developer with a strong background in game development, specializing in crafting immersive web experiences. My passion for creative design is complemented by my commitment to cybersecurity, ensuring that every project I undertake not only captivates users but also prioritizes their data security.",
+    "about-link": "Check out some of my latest projects!",
+
+    "skills" : "Skills",
+    "skills-programming-lang": "Programming Languages",
+    "skills-other" : "Other",
+
+    "projects" : "Projects",
+    "web-projects" : "Web Projects",
+    "quick-quizzer-desc" : "A streamlined quiz platform designed to simplify and accelerate quiz creation and management. Benefit from real-time results and detailed feedback for each participant. Ideal for educators and trainers looking to enhance learning experiences without the hassle of complex software.",
+    "scanner-desc": "A versatile tool offering four distinct malware scanning options, ensuring swift on-the-go results. Eliminate the need to navigate various pages and scanners – stop here to obtain the precise results you seek. Post-scan, download a comprehensive report detailing your findings.",
+    "landmass-desc" : "An image generator designed to produce shapes resembling land and water masses found on Earth. Leveraging Perlin noise, alongside other mathematical formulas and constants, this tool generates diverse landmass patterns suitable for applications in worldbuilding and various hobbies.",
+    "maciwords-desc" : "A captivating world puzzle inspired by the New York Times' ‘Wordle’ game, with a twist. Players enjoy unlimited attempts to unravel the daily puzzle, each try unveiling new hints to guide them towards a solution. A new word puzzle challenge is refreshed every day!",
+    "more-info": "More Information",
+
+    "contact": "Contact",
+    "contact-sub-title": "Get In Touch",
+    "contact-desc" : "I am available for freelance or full-time positions. Contact me and let's talk.",
+    "contact-connect" : "CONNECT WITH ME"
   }

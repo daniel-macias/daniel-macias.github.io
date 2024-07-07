@@ -18,6 +18,7 @@ import NestJSPic from '../public/assets/skills/nestjs.png';
 import Selenium from '../public/assets/skills/selenium.png';
 import VuePic from '../public/assets/skills/vue.png';
 import NuxtPic from '../public/assets/skills/nuxt.png';
+import { useTranslation } from 'next-i18next';
 
 const skillsData = [
   {
@@ -61,11 +62,13 @@ const skillsData = [
 ];
 
 const Skills = () => {
+  const { t } = useTranslation('common'); //remember to check common.json to see strings
+
   return (
     <div id='skills' className='mx-auto lg:w-10/12 lg:h-screen p-2'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-xl tracking-widest uppercase text-[#4B007F] font-semibold JosefinSansFont'>
-          Skills
+          {t('skills')}
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

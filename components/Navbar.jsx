@@ -6,6 +6,7 @@ import { faBars, faEnvelope, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import LogoDMR from '../public/assets/logoSide.png'
 import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -13,6 +14,7 @@ const Navbar = () => {
   const [navBg, setNavBg] = useState('transparent');
   const [linkColor, setLinkColor] = useState('#1f2937');
   const { pathname } = useRouter(); // Get the current path
+  const { t } = useTranslation('common'); //remember to check common.json to see strings
 
   const handleNav = () => {
     setNav(!nav);
@@ -52,19 +54,19 @@ const Navbar = () => {
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>HOME</span></Link>
+              <Link href='/'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>{t('home')}</span></Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#about'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>ABOUT</span></Link>
+              <Link href='/#about'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>{t('about')}</span></Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#skills'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>SKILLS</span></Link>
+              <Link href='/#skills'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>{t('skills')}</span></Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#projects'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>PROJECTS</span></Link>
+              <Link href='/#projects'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>{t('projects')}</span></Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#contact'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>CONTACT</span></Link>
+              <Link href='/#contact'><span className='text-[#3d3d3d] JosefinSansFont font-semibold'>{t('contact')}</span></Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -119,33 +121,33 @@ const Navbar = () => {
             <ul className='uppercase'>
               <Link href='/'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>HOME</span>
+                  <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>{t('home')}</span>
                 </li>
               </Link>
               <Link href='/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>ABOUT</span>
+                  <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>{t('about')}</span>
                 </li>
               </Link>
               <Link href='/#skills'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>SKILLS</span>
+                  <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>{t('skills')}</span>
                 </li>
               </Link>
               <Link href='/#projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>PROJECTS</span>
+                  <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>{t('projects')}</span>
                 </li>
               </Link>
               <Link href='/#contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>CONTACT</span>
+                  <span className='text-[#3d3d3d] JosefinSansFont font-semibold'>{t('contact')}</span>
                 </li>
               </Link>
             </ul>
             <div className='pt-40'>
               <p className='uppercase tracking-widest text-[#4B007F] JosefinSansFont font-semibold'>
-                Let&#39;s Talk
+                {t('contact-connect')}
               </p>
               <div className='flex items-center justify-around my-4 w-full sm:w-[80%]'>
                 <a

@@ -1,5 +1,28 @@
 {
     "name": "Daniel Macías R.",
     "title": "Desarrollador Web Full-Stack",
-    "subtitle": "Creando experiencias web con un toque de creatividad"
+    "subtitle": "Creando experiencias web con un toque de creatividad",
+    "home" : "Inicio",
+
+    "about": "Acerca de",
+    "about-title": "Quien soy",
+    "about-desc": "Soy un desarrollador web especializado en la creación de experiencias web inmersivas y con una sólida trayectoria en el desarrollo de videojuegos. Mi pasión por el diseño creativo se complementa con mi compromiso con la ciberseguridad, asegurando que cada proyecto que realizo no solo cautive a los usuarios, sino que también priorice la seguridad de sus datos.",
+    "about-link": "Mira algunos de mis proyectos!",
+
+    "skills" : "Habilidades",
+    "skills-programming-lang": "Lenguajes de Programación",
+    "skills-other" : "Otros",
+
+    "projects" : "Proyectos",
+    "web-projects" : "Proyectos Web",
+    "quick-quizzer-desc": "Una plataforma de cuestionarios optimizada diseñada para simplificar y acelerar la creación y gestión de cuestionarios. Observe resultados en tiempo real y respuestas cada participante. Ideal para educadores que buscan mejorar las experiencias de aprendizaje sin las complicaciones de software complejo.",
+    "scanner-desc": "Una herramienta versátil que ofrece cuatro opciones distintas de escaneo de malware, asegurando resultados rápidos. Elimine la necesidad de navegar por varias páginas y escáneres: deténgase aquí para obtener los resultados precisos que busca. Después del escaneo, descargue un informe completo que detalla sus hallazgos.",
+    "landmass-desc": "Un generador de imágenes diseñado para producir formas que se asemejan a masas terrestres y agua encontradas en la Tierra. Aprovechando el ruido Perlin, junto con otras fórmulas matemáticas, esta herramienta genera patrones diversos de masas terrestres adecuados para aplicaciones en la creación de mundos y otros diversos pasatiempos.",
+    "maciwords-desc": "Un divertido rompecabezas inspirado en el juego 'Wordle' del New York Times. Los jugadores disfrutan de intentos ilimitados para resolver el rompecabezas diario, cada intento revelando nuevas pistas para guiarlos hacia una solución. ¡Cada día se actualiza un nuevo desafío de rompecabezas de palabras!",
+    "more-info": "Más Información",
+
+    "contact": "Contacto",
+    "contact-sub-title": "Ponerse en Contacto",
+    "contact-desc" : "Estoy disponible para trabajo freelance y posiciones tiempo completo. Contácteme y hablemos!",
+    "contact-connect" : "Hablemos"
   }

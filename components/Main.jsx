@@ -4,7 +4,6 @@ import { WavyBackground } from './ui/wavy-background';
 
 const Main = () => {
   const { t } = useTranslation('common');
-  console.log(t('name'));
 
   return (
     <div id='home' className='relative w-full h-screen text-center md:overflow-hidden'>
