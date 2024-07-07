@@ -12,9 +12,13 @@ import ImgLandmass0 from '../public/assets/landmass/landmass-0.png'
 import ImgLandmass1 from '../public/assets/landmass/landmass-1.png'
 import ImgLandmass2 from '../public/assets/landmass/landmass-2.png'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 
-const landmass = () => {
+export default function landmass () {
+  const { t } = useTranslation('common');
   return (
     <div className='w-full'>
       <Head>
@@ -44,23 +48,23 @@ const landmass = () => {
               <FontAwesomeIcon icon={faArrowLeft} />
             </div>
           </Link>
-          <h2 className='text-xl'>Overview</h2>
+          <h2 className='text-xl'>{t('overview')}</h2>
           <p>
-          An image generator designed to produce shapes resembling land and water masses found on Earth. Leveraging Perlin noise, alongside other mathematical formulas and constants, this tool generates diverse landmass patterns suitable for applications in worldbuilding and various hobbies.
+          {t('landmass-desc')}
           </p>
           <a
             href='https://github.com/daniel-macias/landmass'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500 mr-4'><FontAwesomeIcon icon={faGithub} /> Repository</button>
+            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500 mr-4'><FontAwesomeIcon icon={faGithub} /> {t('repository')}</button>
           </a>
           <a
             href='https://landmass-generator.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500'>Open Live Demo</button>
+            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500'>{t('open-live-demo')}</button>
           </a>
         </div>
         <div className='col-span-4 md:col-span-2 py-4'>
@@ -76,4 +80,10 @@ const landmass = () => {
   )
 }
 
-export default landmass
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
+    },
+  };
+};

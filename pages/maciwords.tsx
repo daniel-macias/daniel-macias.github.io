@@ -12,9 +12,13 @@ import ImgPuzzle0 from '../public/assets/puzzle/puzzle-0.png'
 import ImgPuzzle1 from '../public/assets/puzzle/puzzle-1.png'
 import ImgPuzzle2 from '../public/assets/puzzle/puzzle-2.png'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 
-const maciwords = () => {
+export default function maciwords () {
+  const { t } = useTranslation('common');
   return (
     <div className='w-full'>
       <Head>
@@ -44,23 +48,23 @@ const maciwords = () => {
               <FontAwesomeIcon icon={faArrowLeft} />
             </div>
           </Link>
-          <h2 className='text-xl'>Overview</h2>
+          <h2 className='text-xl'>{t('overview')}</h2>
           <p>
-          A captivating world puzzle inspired by the New York Times&apos; &lsquo;Wordle&rsquo; game, with a twist. Players enjoy unlimited attempts to unravel the daily puzzle, each try unveiling new hints to guide them towards a solution. A new word puzzle challenge is refreshed every day!
+          {t('maciwords-desc')}
           </p>
           <a
             href='https://github.com/daniel-macias/macipalabras'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500 mr-4'><FontAwesomeIcon icon={faGithub} /> Repository</button>
+            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500 mr-4'><FontAwesomeIcon icon={faGithub} /> {t('repository')}</button>
           </a>
           <a
             href='https://macipalabras-daniel-macias-projects.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500'>Open Live Demo</button>
+            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500'>{t('open-live-demo')}</button>
           </a>
         </div>
         <div className='col-span-4 md:col-span-2 py-4'>
@@ -76,4 +80,10 @@ const maciwords = () => {
   )
 }
 
-export default maciwords
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
+    },
+  };
+};

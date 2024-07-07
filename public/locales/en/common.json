@@ -26,5 +26,9 @@
     "contact": "Contact",
     "contact-sub-title": "Get In Touch",
     "contact-desc" : "I am available for freelance or full-time positions. Contact me and let's talk.",
-    "contact-connect" : "CONNECT WITH ME"
+    "contact-connect" : "CONNECT WITH ME",
+
+    "overview" : "Overview",
+    "repository" : "Repository",
+    "open-live-demo" : "Open Live Demo"
   }

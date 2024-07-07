@@ -26,5 +26,9 @@
     "contact": "Contacto",
     "contact-sub-title": "Ponerse en Contacto",
     "contact-desc" : "Estoy disponible para trabajo freelance y posiciones tiempo completo. Contácteme y hablemos!",
-    "contact-connect" : "Hablemos"
+    "contact-connect" : "Hablemos",
+
+    "overview" : "Resumen",
+    "repository" : "Repositorio",
+    "open-live-demo" : "Ir a Demo"
   }

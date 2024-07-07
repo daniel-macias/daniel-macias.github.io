@@ -14,9 +14,13 @@ import ImgQuizzer2 from '../public/assets/quizzer/quizzer-2.png'
 import ImgQuizzer3 from '../public/assets/quizzer/quizzer-3.png'
 import ImgQuizzer4 from '../public/assets/quizzer/quizzer-4.png'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 
-const quizzer = () => {
+export default function quizzer () {
+  const { t } = useTranslation('common');
   return (
     <div className='w-full'>
       <Head>
@@ -46,9 +50,9 @@ const quizzer = () => {
               <FontAwesomeIcon icon={faArrowLeft} />
             </div>
           </Link>
-          <h2 className='text-xl'>Overview</h2>
+          <h2 className='text-xl'>{t('overview')}</h2>
           <p className='mb-4'>
-          A streamlined quiz platform designed to simplify and accelerate quiz creation and management. Benefit from real-time results and detailed feedback for each participant. Ideal for educators and trainers looking to enhance learning experiences without the hassle of complex software.
+          {t('quick-quizzer-desc')}
           </p>
           <h3>Frontend</h3>
           <hr />
@@ -57,14 +61,14 @@ const quizzer = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500 mr-4'><FontAwesomeIcon icon={faGithub} /> Repository</button>
+            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500 mr-4'><FontAwesomeIcon icon={faGithub} /> {t('repository')}</button>
           </a>
           <a
             href='https://instant-quizzer-frontend.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >
-            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500'>Open Live Demo</button>
+            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500'>{t('open-live-demo')}</button>
           </a>
           <h3 className='mt-2'>Backend</h3>
           <hr />
@@ -73,7 +77,7 @@ const quizzer = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500 mr-4'><FontAwesomeIcon icon={faGithub} /> Repository</button>
+            <button className='text-center py-2 px-3 mt-2 rounded-sm bg-[#4B007F] text-gray-100 text-lg cursor-pointer hover:bg-[#7132B2] JosefinSansFont shadow-xl shadow-gray-400 transition duration-500 mr-4'><FontAwesomeIcon icon={faGithub} /> {t('repository')}</button>
           </a>
         </div>
         <div className='col-span-4 md:col-span-2 py-4'>
@@ -89,4 +93,10 @@ const quizzer = () => {
   )
 }
 
-export default quizzer
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
+    },
+  };
+};
