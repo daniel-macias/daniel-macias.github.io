@@ -10,8 +10,10 @@
     "about-link": "Check out some of my latest projects!",
 
     "skills" : "Skills",
-    "skills-programming-lang": "Programming Languages",
-    "skills-other" : "Other",
+    "frontendWeb": "Frontend Web",
+    "backendWeb": "Backend Web",
+    "programmingLanguages": "Programming Languages",
+    "other": "Other",
 
     "projects" : "Projects",
     "web-projects" : "Web Projects",

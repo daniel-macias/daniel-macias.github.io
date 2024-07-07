@@ -22,7 +22,7 @@ import { useTranslation } from 'next-i18next';
 
 const skillsData = [
   {
-    category: 'Frontend Web',
+    category: 'frontendWeb',
     items: [
       { name: 'React.js', img: ReactPic },
       { name: 'Next.js', img: NextPic },
@@ -31,7 +31,7 @@ const skillsData = [
     ],
   },
   {
-    category: 'Backend Web',
+    category: 'backendWeb',
     items: [
       { name: 'Node.js', img: NodePic },
       { name: 'Nest.js', img: NestJSPic },
@@ -40,7 +40,7 @@ const skillsData = [
     ],
   },
   {
-    category: 'Programming Languages',
+    category: 'programmingLanguages',
     items: [
       { name: 'JavaScript', img: JavascriptPic },
       { name: 'TypeScript', img: TypescriptPic },
@@ -51,7 +51,7 @@ const skillsData = [
     ],
   },
   {
-    category: 'Other',
+    category: 'other',
     items: [
       { name: 'Amazon Web Services', img: AWSPic },
       { name: 'Docker', img: DockerPic },
@@ -74,7 +74,7 @@ const Skills = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {skillsData.map((category, index) => (
             <div key={index} className="p-4 bg-gray-100">
-              <h2 className='text-xl JosefinSansFont'>{category.category}</h2>
+              <h2 className='text-xl JosefinSansFont'>{t(category.category)}</h2>
               <div className="grid grid-cols-4 gap-4 mt-4">
                 {category.items.map((item, idx) => (
                   <div key={idx} className='p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 flex flex-col items-center'>
