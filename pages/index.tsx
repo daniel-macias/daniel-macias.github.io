@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import About from '../components/About'
-import Contact from '../components/Contact'
 import Main from '../components/Main'
 import Projects from '../components/Projects'
-import Skills from '../components/Skills'
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -11,8 +9,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Daniel Macias | Full-Stack Developer</title>
-        <meta name="description" content="I'm a full-stack web developer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between." />
+        <title>Daniel Macías | Software Developer</title>
+        <meta name="description" content="Daniel Macías builds practical software, creative tools, and products for the web." />
         <meta name="keywords" content="Daniel Macias, full-stack developer, web development, JavaScript, React, Node.js" />
         <link rel="icon" href="/dmr-fav.png" />
 
@@ -34,9 +32,7 @@ export default function Home() {
       </Head>
     <Main />
     <About />
-    <Skills />
     <Projects />
-    <Contact />
     </div>
   )
 }

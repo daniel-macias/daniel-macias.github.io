@@ -51,7 +51,7 @@ const ImageCarousel = ({ images, autoplayInterval = 3000 }) => {
         <div className="flex">
           {images.map((src, index) => (
             <div className="relative flex-[0_0_100%]" key={index}>
-              <Image src={src} alt={`Slide ${index}`}  objectFit="contain" />
+              <Image src={src} alt={`Slide ${index + 1}`} className='h-auto w-full object-contain' />
             </div>
           ))}
         </div>
