@@ -12,12 +12,12 @@ export default function Home() {
         <title>Daniel Macías | Software Developer</title>
         <meta name="description" content="Daniel Macías builds practical software, creative tools, and products for the web." />
         <meta name="keywords" content="Daniel Macias, full-stack developer, web development, JavaScript, React, Node.js" />
-        <link rel="icon" href="/dmr-fav.png" />
+        <link rel="icon" href="/brand-dot.svg" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Daniel Macias | Full-Stack Developer" />
         <meta property="og:description" content="I'm a full-stack web developer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between." />
-        <meta property="og:image" content="/dmr-banner.png" />
+        <meta property="og:image" content="/brand-dot.svg" />
         <meta property="og:url" content="https://www.maciasreynaud.com/" />
         <meta property="og:type" content="website" />
 
@@ -25,7 +25,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Daniel Macias | Full-Stack Developer" />
         <meta name="twitter:description" content="I'm a full-stack web developer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between." />
-        <meta name="twitter:image" content="/dmr-banner.png" />
+        <meta name="twitter:image" content="/brand-dot.svg" />
 
         {/* Canonical Link */}
         <link rel="canonical" href="https://www.maciasreynaud.com/" />

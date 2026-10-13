@@ -10,10 +10,10 @@ export default function NotFound() {
   return (
     <main className='flex min-h-screen items-center px-6 pt-20'>
       <div className='mx-auto w-full max-w-[900px]'>
-        <p className='text-sm font-semibold uppercase tracking-[0.22em] text-[#4B007F]'>404</p>
-        <h1 className='mt-4 text-5xl font-semibold JosefinSansFont'>{copy.title}</h1>
+        <p className='text-sm font-semibold uppercase tracking-[0.22em] text-[#737373]'>404</p>
+        <h1 className='mt-4 '>{copy.title}</h1>
         <p className='mt-4 text-gray-600'>{copy.description}</p>
-        <Link href='/' className='mt-8 inline-flex rounded-full bg-[#4B007F] px-6 py-3 text-sm font-semibold text-white hover:bg-[#7132B2]'>
+        <Link href='/' className='mt-8 inline-flex rounded-full bg-[#262626] px-6 py-3 text-sm font-semibold text-white hover:bg-[#414141]'>
           {copy.back}
         </Link>
       </div>

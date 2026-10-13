@@ -4,41 +4,32 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faAnglesUp } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import LogoSide from '../public/assets/logoSide.png';
-import LogoBanner from '../public/dmr-banner.png';
+
+
 import { useTranslation } from 'next-i18next';
 
 const Contact = () => {
   const { t } = useTranslation('common'); //remember to check common.json to see strings
   return (
     <div id='contact' className='w-full lg:h-screen'>
-      <div className='max-w-[1240px] m-auto px-2 py-16 lg:w-10/12'>
-        <p className='text-xl tracking-widest uppercase text-[#4B007F] font-semibold JosefinSansFont'>
+      <div className='max-w-[1024px] m-auto px-2 py-16 lg:w-10/12'>
+        <p className='section-label'>
           {t('contact')}
         </p>
         <h2 className='py-4 font-semibold JosefinSansFont'>{t('contact-sub-title')}</h2>
         <div className='lg:hidden flex justify-center'>
-          <Image
-            className='rounded-sm hover:scale-105 ease-in duration-300 mx-auto'
-            src={LogoBanner}
-            alt='/'
-            height={150}
-          />
+          <span className='brand-dot !h-20 !w-20' aria-hidden='true' />
         </div>
         <div className='grid lg:grid-cols-4 gap-8'>
           {/* Left column */}
           <div className='col-span-1 w-full h-full p-4 flex items-center justify-center'>
             <div className='hidden lg:block'>
-              <Image
-                className='rounded-sm hover:scale-105 ease-in duration-300'
-                src={LogoSide}
-                alt='/'
-              />
+              <span className='brand-dot !h-20 !w-20' aria-hidden='true' />
             </div>
           </div>
 
           {/* Right column */}
-          <div className='col-span-3 w-full h-full shadow-xl shadow-gray-400 rounded-sm p-4'>
+          <div className='col-span-3 w-full h-full border border-black/10 bg-[#EEEAE4] rounded-2xl p-4'>
             <div className='p-4'>
               <div className='pb-4'>
                 <h2 className='py-2 font-semibold JosefinSansFont'>Daniel Macías</h2>
